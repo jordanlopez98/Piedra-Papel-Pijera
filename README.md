@@ -1,2 +1,4 @@
 # Piedra-Papel-Pijera
-Juego de piedra papel o tijera
+primer repositorio de Githgub
+
+## Juego de piedra papel o tijera
