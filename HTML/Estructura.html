@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Estilo.css" />
+    <link rel="shortcut icon" href="IMG/6851361.png" type="image/x-icon" />
+    <title>Piedra, Papel o Tijera</title>
+  </head>
+
+  <body>
+    <div id="contenedor_general">
+      <header>
+        <h1>
+          <span class="efPiedra">PIEDRA</span>,
+          <span class="efPapel">PAPEL</span> O
+          <span class="efTijera">TIJERA</span>
+        </h1>
+      </header>
+      <div>
+        <div>
+          <p>
+            Bienvenido al juego de piedra, papel o tijera. Elige una opcion y
+            presiona el boton <span class="color">"JUGAR"</span>.<br />
+            Espera que las opciones vuelvan a su posicion para iniciar la
+            siguiente ronda.<br />
+            Quien obtenga mas puntos sera el <span class="color">GANADOR</span>.
+          </p>
+        </div>
+        <div>
+          <p id="mensaje" class="mensaje">Elige tu opcion:</p>
+        </div>
+
+        <div class="opciones">
+          <img
+            src="IMG/Piedra.png"
+            id="piedra"
+            alt="piedra"
+            class="imagen piedra"
+          />
+
+          <img
+            src="IMG/Papel.png"
+            id="papel"
+            alt="papel"
+            class="imagen papel"
+          />
+
+          <img
+            src="IMG/Tijera.png"
+            id="tijera"
+            alt="tijera"
+            class="imagen tijera"
+          />
+        </div>
+        <div id="contenedor_me">
+          <p class="eleccion">Mi Eleccion</p>
+          <p id="miEleccion" class="puntos">---</p>
+          <p class="eleccion">Puntos</p>
+          <p id="misPuntos" class="puntos">---</p>
+        </div>
+
+        <div id="contenedor_pc">
+          <p class="eleccion">Eleccion Computadora</p>
+          <p id="pcEleccion" class="puntos">---</p>
+          <p class="eleccion">Puntos</p>
+          <p id="pcPuntos" class="puntos">---</p>
+        </div>
+
+        <div class="distancia_botones">
+          <div>
+            <button id="jugar" class="boton_jugar">JUGAR</button>
+          </div>
+          <p id="contador_ronda" class="sombra">ROUND 1</p>
+          <div>
+            <button id="reiniciar" class="boton_reiniciar">REINICIAR</button>
+          </div>
+        </div>
+
+        <footer>
+          <h3 id="resFinal">Are you ready</h3>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script src="funcionamiento.js"></script>
+</html>

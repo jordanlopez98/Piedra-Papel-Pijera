@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 238, 255);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+h1 {
+  font-family: "Stencil";
+  font-weight: 100;
+  font-size: 50px;
+  background-color: rgb(62, 64, 66);
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px rgba(152, 149, 149, 0.663);
+  display: inline-block;
+  margin: 10px;
+  text-shadow: 3px;
+}
+
+h3 {
+  font-family: "Stencil";
+  font-weight: 100;
+  color: rgb(2, 255, 255);
+}
+p {
+  margin: 15px;
+}
+
+#contenedor_general {
+  margin: auto;
+  margin-top: 10px;
+  width: 1120px;
+  height: 490px;
+  background-color: rgb(17, 30, 155);
+  position: relative;
+  border-radius: 30px;
+}
+
+#contenedor_me {
+  background-color: rgb(72, 48, 48);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  border-radius: 20px;
+  border: solid rgba(255, 0, 0, 0.409);
+  border-width: 3px;
+}
+
+#contenedor_pc {
+  background-color: rgb(65, 50, 71);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  border-radius: 20px;
+  border: solid rgba(166, 0, 255, 0.527);
+  border-width: 3px;
+}
+
+.imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.piedra {
+  background-color: rgb(14, 237, 14);
+  box-shadow: 7px 7px 10px 5px rgba(24, 154, 7, 0.777);
+}
+.papel {
+  background-color: rgb(0, 85, 255);
+  box-shadow: 7px 7px 10px 5px rgba(5, 130, 117, 0.727);
+}
+.tijera {
+  background-color: rgb(255, 255, 1);
+  box-shadow: 7px 7px 10px 5px rgba(177, 177, 22, 0.801);
+}
+
+.opciones {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px;
+}
+
+button {
+  font-size: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 5px rgb(246, 5, 5), 0 0 25px rgb(246, 5, 5),
+    0 0 50px rgb(246, 5, 5), 0 0 100px rgb(246, 5, 5);
+  color: rgb(0, 255, 255);
+  background-color: rgb(202, 40, 40);
+}
+.piedra:hover,
+.papel:hover,
+.tijera:hover {
+  transform: scale(1.2);
+}
+.boton_jugar {
+  background-color: rgb(51, 146, 30);
+  box-shadow: -3px -3px 5px 2px rgb(9, 42, 1);
+  color: rgba(235, 224, 13, 0.874);
+}
+.boton_reiniciar {
+  background-color: rgb(212, 65, 65);
+  box-shadow: -3px -3px 5px 2px rgb(95, 3, 3);
+  color: rgb(7, 7, 231);
+}
+.boton_jugar:hover {
+  box-shadow: 0 0 5px rgb(8, 132, 11), 0 0 25px rgb(8, 132, 11),
+    0 0 50px rgb(8, 132, 11), 0 0 100px rgb(8, 132, 11);
+  color: rgb(255, 255, 0);
+  background-color: rgb(21, 109, 11);
+}
+.distancia_botones {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin: 10px;
+}
+.mensaje {
+  font-size: 20px;
+  font-family: "Stencil";
+  padding: 3px;
+  color: aliceblue;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.7);
+}
+.seleccion {
+  transform: scale(1.2);
+  background-color: rgb(255, 0, 0);
+  box-shadow: 7px 7px 10px 5px rgba(200, 26, 26, 0.777);
+}
+.seleccion_compu {
+  transform: scale(1.2);
+  background-color: rgba(179, 0, 255, 0.41);
+  box-shadow: 7px 7px 10px 5px rgba(142, 5, 234, 0.777);
+}
+.seleccion_ambos {
+  transform: scale(1.2);
+  background-color: rgb(255, 111, 0);
+  box-shadow: 7px 7px 10px 5px rgba(255, 162, 1, 0.777);
+}
+.eleccion {
+  font-family: "Arial ";
+  font-size: 16px;
+}
+.puntos {
+  font-family: "Stencil";
+  font-weight: 100;
+  font-size: 35px;
+}
+.efPiedra {
+  text-shadow: 0 0 5px rgba(27, 220, 34, 0.873);
+}
+.efPapel {
+  text-shadow: 0 0 5px rgba(12, 80, 238, 0.888);
+}
+.efTijera {
+  text-shadow: 0 0 5px rgba(238, 235, 3, 0.772);
+}
+.color {
+  color: rgb(6, 244, 14);
+}
+.sombra {
+  text-shadow: 5px 10px 3px rgb(30, 30, 46);
+  font-weight: 800;
+}
